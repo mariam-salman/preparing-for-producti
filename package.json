@@ -1,0 +1,22 @@
+ {
+  "name": "udacity-production-project",
+  "version": "1.0.0",
+  "description": "Project for Udacity: Preparing for Production",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html --port 1234",
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "cypress": "^13.7.3",
+    "eslint": "^8.57.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-shell": "^0.8.0",
+    "mocha": "^10.2.0",
+    "parcel": "^2.10.0"
+  }
+}
+

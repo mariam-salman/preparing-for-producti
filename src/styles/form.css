@@ -1,0 +1,77 @@
+/* Card Form Styling */
+/* ✅ Optimized & cleaned CSS styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: .5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.invalid-feedback {
+  visibility: hidden !important;
+  display: block !important; 
+  color: red;
+  font-size: 0.875rem;
+}
+
+input.is-invalid + .invalid-feedback {
+  visibility: visible !important;
+  display: block !important;
+}
+
+
+
+/* Success message styling */
+.success-message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 15px;
+}
