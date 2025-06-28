@@ -1,6 +1,6 @@
- describe('Navigation Tests', () => {
+describe('Navigation Tests', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:1235');
+    cy.visit('http://localhost:1240'); 
   });
 
   it('Navigates to Home page', () => {

@@ -4,7 +4,7 @@ import { exec } from 'child_process';
 
 gulp.task('parcel', shell.task('npx parcel build src/index.html --dist-dir dist'));
 
-gulp.task('serve', shell.task('npx parcel src/index.html --port 1234'));
+gulp.task('serve', shell.task('npx parcel src/index.html --port 1240'));
 
 gulp.task('wait', (done) => {
   console.log('⌛ Waiting for server to be ready...');

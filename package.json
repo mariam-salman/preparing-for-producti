@@ -1,12 +1,14 @@
- {
+{
   "name": "udacity-production-project",
   "version": "1.0.0",
   "description": "Project for Udacity: Preparing for Production",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "parcel src/index.html --port 1234",
-    "gulp": "gulp"
+    "start": "parcel src/index.html --port 1240",
+    "gulp": "gulp",
+    "test": "mocha",
+    "cypress": "npx cypress run"
   },
   "devDependencies": {
     "chai": "^4.3.7",
@@ -19,4 +21,3 @@
     "parcel": "^2.10.0"
   }
 }
-

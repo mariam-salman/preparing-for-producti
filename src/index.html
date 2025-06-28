@@ -18,19 +18,17 @@
       display: block;
     }
 
-.invalid-feedback {
-  visibility: hidden !important;
-  display: block !important; 
-  color: red;
-  font-size: 0.875rem;
-}
+    .invalid-feedback {
+      visibility: hidden !important;
+      display: block !important; 
+      color: red;
+      font-size: 0.875rem;
+    }
 
-input.is-invalid + .invalid-feedback {
-  visibility: visible !important;
-  display: block !important;
-}
-
-
+    input.is-invalid + .invalid-feedback {
+      visibility: visible !important;
+      display: block !important;
+    }
   </style>
 </head>
 <body>
@@ -83,7 +81,7 @@ input.is-invalid + .invalid-feedback {
                 <form id="create-set-form" data-cy="create-set-form">
                   <div class="mb-3">
                     <label for="set-name" class="form-label">Set Name</label>
-                    <input type="text" class="form-control" id="set-name" data-cy="set-name-input" >
+                    <input type="text" class="form-control" id="set-name" data-cy="set-name-input">
                     <div class="invalid-feedback" data-cy="set-name-error" style="visibility: hidden;">Error</div>
                   </div>
                   <div class="mb-3">

@@ -34,15 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (setName === '') {
         setNameError.textContent = 'Error';
-        setNameInput.classList.add('is-invalid'); 
+        setNameInput.classList.add('is-invalid');
         return;
       } else {
-        setNameInput.classList.remove('is-invalid'); 
+        setNameInput.classList.remove('is-invalid');
         setNameError.textContent = '';
       }
 
       const successMessage = document.createElement('div');
       successMessage.textContent = 'Set created';
+      successMessage.setAttribute('data-cy', 'set-success'); 
       successMessage.classList.add('success-message');
       successMessage.style.color = 'green';
       successMessage.style.marginTop = '10px';
@@ -50,7 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
       cardSetsContainer.appendChild(successMessage);
       setNameInput.value = '';
     });
-
   }
-
 });
